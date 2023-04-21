@@ -22,7 +22,7 @@ function populateDashboard(numOfEntries) {
     for (let i = 0; i < numOfEntries; i++) {
         // Create a new div for each device
         var newDiv = document.createElement("div");
-        newDiv.setAttribute("class", "deviceDashboardEntry");
+        newDiv.setAttribute("id", "deviceDashboardEntry");
         newDiv.innerHTML = `
          <h2>${devices[i]["deviceName"]}</h2>
          <p>${devices[i]["longitude"]}, ${devices[i]["latitude"]}</p>
