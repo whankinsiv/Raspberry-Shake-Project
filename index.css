@@ -50,6 +50,7 @@ body {
 }
 
 #deviceDashboardEntry {
+    background-image: linear-gradient(to left, #DECBA4, #3E5151);
     border: 1px solid black;
     border-radius: 5px;
     align-items: center;
