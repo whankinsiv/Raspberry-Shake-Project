@@ -41,6 +41,9 @@ function populateList(numOfEntries) {
 
         deviceList.innerHTML += `
             <div id="deviceListEntry">${devices[i]["deviceName"]}</div>
-        `
+        `;
     }
+    deviceList.innerHTML += `
+            <div id="deviceListEntry onClick="addNewDeviceClicked()">Add New Device</div>
+        `;
 }
