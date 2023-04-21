@@ -27,10 +27,10 @@ function populateDashboard(numOfEntries) {
 
 function populateList(numOfEntries) {
     for (let i = 0; i < numOfEntries; i++) {
-        var deviceDashboard = document.querySelector("deviceListMain");
+        var deviceList = document.getElementById("deviceListMain");
         // Create a new div for each device
 
-        deviceDashboard.innerHTML += `
+        deviceList.innerHTML += `
             <div id="deviceListEntry">${devices[i]["deviceName"]}</div>
         `
     }
