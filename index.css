@@ -23,6 +23,15 @@ body {
     min-width: 20%;
 }
 
+#deviceListEntry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
 #deviceListHeader {
     display: flex;
     justify-content: center;
