@@ -52,5 +52,6 @@ body {
     border: 1px solid black;
     width: 30%;
     height: 300px;
-    margin: 3%;
+    margin-left: 3%;
+    margin-top: 2vh;
 }
