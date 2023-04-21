@@ -25,7 +25,7 @@ function populateDashboard(numOfEntries) {
         newDiv.setAttribute("class", "deviceDashboardEntry");
         newDiv.innerHTML = `
          <h2>${devices[i]["deviceName"]}</h2>
-         <p>${devices[i]["altitude"]}</p>
+         <p>${devices[i]["longitude"]}, ${devices[i]["latitude"]}</p>
         `;
   
         // Add the new div to the deviceListMain element
