@@ -44,6 +44,6 @@ function populateList(numOfEntries) {
         `;
     }
     deviceList.innerHTML += `
-            <div id="deviceListEntry onClick="addNewDeviceClicked()">Add New Device</div>
+            <div id="deviceListEntry" onClick="addNewDeviceClicked()">Add New Device</div>
         `;
 }
