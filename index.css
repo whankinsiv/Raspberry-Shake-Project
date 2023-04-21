@@ -45,4 +45,9 @@ body {
     border-left: 2px solid black;
     height: 100%;
     width: 80%;
+    display: flex;
+}
+
+#deviceDashboardEntry {
+    border: 1px solid black;
 }
