@@ -12,7 +12,7 @@ function loadData() {
 
             // Populate device dashboard with devices
             populateDashboard(devices.length);
-            populateList(devides.length);
+            populateList(devices.length);
         });
 }
 
