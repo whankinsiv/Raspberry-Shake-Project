@@ -17,10 +17,19 @@ function loadData() {
 }
 
 function populateDashboard(numOfEntries) {
-    var deviceDashboard = document.querySelector("deviceDashboard");
+    var deviceDashboard = document.getElementById("deviceDashboard");
 
     for (let i = 0; i < numOfEntries; i++) {
-
+        // Create a new div for each device
+        var newDiv = document.createElement("div");
+        newDiv.setAttribute("class", "deviceDashboardEntry");
+        newDiv.innerHTML = `
+         <h2>${devices[i]["deviceName"]}</h2>
+         <p>${devices[i]["deviceDescription"]}</p>
+        `;
+  
+        // Add the new div to the deviceListMain element
+        deviceDashboard.appendChild(newDiv);
     }
 }
 
