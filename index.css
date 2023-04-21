@@ -20,7 +20,8 @@ body {
 
 #deviceList {
     height: 100%;
-    min-width: 20%;
+    min-width: 128px;
+    width: 20%;
 }
 
 #deviceListEntry {
