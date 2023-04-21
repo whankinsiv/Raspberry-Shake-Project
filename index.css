@@ -1,5 +1,6 @@
 html {
     min-height: 100%;   
+    overflow: hidden;
 }
 
 body {
@@ -7,9 +8,6 @@ body {
     margin: 0;
     width: 100vw;
     background-image: linear-gradient(to right, #DECBA4, #3E5151);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #header {
