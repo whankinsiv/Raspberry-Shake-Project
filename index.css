@@ -50,5 +50,7 @@ body {
 
 #deviceDashboardEntry {
     border: 1px solid black;
-    width: 30%
+    width: 30%;
+    height: 300px;
+    padding: 3%;
 }
