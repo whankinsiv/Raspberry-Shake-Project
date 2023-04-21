@@ -48,6 +48,8 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 #deviceDashboardEntry {
