@@ -41,9 +41,9 @@ function createMap(latitude, longitude, mapDiv) {
         container: mapDiv
 
     });
-
-    var marker = new tt.Marker().setLngLat([longitude, latitude]).addTo(map);
     /*
+    var marker = new tt.Marker().setLngLat([longitude, latitude]).addTo(map);
+    
     map.setZoom(12);
 
     var zoomControl = new tt.ZoomControl();
