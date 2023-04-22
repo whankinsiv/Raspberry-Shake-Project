@@ -1,6 +1,7 @@
 html {
     overflow: hidden;
     height: 100%;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -109,7 +110,7 @@ body {
 
 #addDeviceClose {
     align-self: flex-end;
-    padding-left: 4px;
+    padding-left: 1vw;
     padding-bottom: 4px;
 }
 
