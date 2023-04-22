@@ -27,11 +27,11 @@ function populateDashboard(numOfEntries) {
          <h2>${devices[i]["deviceName"]}</h2>
          <div id="map${i}"></div>
          <p>${devices[i]["longitude"]}, ${devices[i]["latitude"]}</p>
-         <script>createMap(${devices[i]["latitude"]}, ${devices[i]["longitude"]}, 'map${i}')</script>
         `;
 
         // Add the new div to the deviceListMain element
         deviceDashboard.appendChild(newDiv);
+        createMap(devices[i]["latitude"], devices[i]["longitude"], `map${i}`);
     }
 }
 
@@ -58,7 +58,7 @@ function populateList(numOfEntries) {
         // Create a new div for each device
 
         deviceList.innerHTML += `
-            <div id="deviceListEntry">${devices[i]["deviceName"]}</div>
+            <div class= "map" id="deviceListEntry">${devices[i]["deviceName"]}</div>
         `;
     }
     deviceList.innerHTML += `
