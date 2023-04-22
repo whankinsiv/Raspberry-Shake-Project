@@ -41,14 +41,10 @@ function createMap(latitude, longitude, mapDiv) {
         container: mapDiv
 
     });
-    /*
-    var marker = new tt.Marker().setLngLat([longitude, latitude]).addTo(map);
-    
-    map.setZoom(12);
 
-    var zoomControl = new tt.ZoomControl();
-    map.addControl(zoomControl);
-    */
+    var center = [longitude, latitude];
+    map.setCenter(center);
+    map.setZoom(14);
 }
 
 
