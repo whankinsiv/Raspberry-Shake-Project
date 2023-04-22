@@ -42,13 +42,13 @@ function createMap(latitude, longitude, mapDiv) {
 
     });
 
-    map.setStyle('https://api.tomtom.com/maps-sdk/v2/preview/styles/basic-main/1');
     var marker = new tt.Marker().setLngLat([longitude, latitude]).addTo(map);
-
+    /*
     map.setZoom(12);
 
     var zoomControl = new tt.ZoomControl();
     map.addControl(zoomControl);
+    */
 }
 
 
