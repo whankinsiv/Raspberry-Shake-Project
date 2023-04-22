@@ -97,3 +97,15 @@ body {
 #addDevicePopup.active {
     display: flex;
 }
+
+#addDeviceHeader {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#addDeviceClose {
+    padding-left: 2vw;
+}
