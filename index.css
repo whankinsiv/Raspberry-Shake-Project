@@ -1,4 +1,4 @@
-html {   
+html {
     overflow: hidden;
     height: 100%;
 }
@@ -76,3 +76,7 @@ body {
     height: 300px;
     margin-top: 2vh;
 }
+
+#addDevicePopup {}
+
+#addDevicePopup.active

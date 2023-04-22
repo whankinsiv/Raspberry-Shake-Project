@@ -27,7 +27,7 @@ function populateDashboard(numOfEntries) {
          <h2>${devices[i]["deviceName"]}</h2>
          <p>${devices[i]["longitude"]}, ${devices[i]["latitude"]}</p>
         `;
-  
+
         // Add the new div to the deviceListMain element
         deviceDashboard.appendChild(newDiv);
     }
@@ -44,6 +44,6 @@ function populateList(numOfEntries) {
         `;
     }
     deviceList.innerHTML += `
-            <div id="deviceListEntry" onClick="addNewDeviceClicked()">Add New Device</div>
+            <div id="deviceListEntry" onClick="addDevicePushed()">Add New Device</div>
         `;
 }
