@@ -9,7 +9,32 @@ body {
     height: 100%;
     margin: 0;
     width: 100vw;
-    background-image: radial-gradient(circle 311px at 8.6% 27.9%, rgba(62, 147, 252, 0.57) 12.9%, rgba(239, 183, 192, 0.44) 91.2%);
+    background:
+        radial-gradient(circle at bottom, white, transparent 80%),
+        linear-gradient(to top, dodgerblue 0%, transparent 70%),
+        linear-gradient(to bottom, transparent, rgba(white, 0.4) 70%),
+        blue;
+    animation: bg 30s infinite;
+}
+
+@keyframes bg {
+
+    0%,
+    100% {
+        background-color: blue;
+    }
+
+    25% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    75% {
+        background-color: pink;
+    }
 }
 
 #header {
