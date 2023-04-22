@@ -42,7 +42,7 @@ function createMap(latitude, longitude, mapDiv) {
 
     });
 
-    map.setStyle('tomtom://vector/1/basic-main');
+    map.setStyle('https://api.tomtom.com/maps-sdk/v2/preview/styles/basic-main/1');
     var marker = new tt.Marker().setLngLat([longitude, latitude]).addTo(map);
 
     map.setZoom(12);
