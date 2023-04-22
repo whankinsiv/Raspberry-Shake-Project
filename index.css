@@ -87,6 +87,7 @@ body {
     width: 80%;
     max-width: 800px;
     border: 1px solid black;
+    z-index: 4;
 }
 
 #addDevicePopup.active {}
