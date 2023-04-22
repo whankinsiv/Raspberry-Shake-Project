@@ -9,7 +9,7 @@ function closeAddDevicePopup() {
 }
 
 function submitForm() {
-    var deviceName = document.getElementById("deviceName");
+    var deviceName = document.getElementById("deviceName").value;
     console.log(deviceName);
     var ipAddress = document.getElementById("ipAddress");
     var userName = document.getElementById("userName");
