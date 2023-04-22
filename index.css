@@ -110,8 +110,7 @@ body {
 #addDeviceClose {
     align-self: flex-end;
     padding-left: 1vw;
-    display: flex;
-    justify-content: center;
+    padding-bottom: 1vh;
 }
 
 #popupTitle {
