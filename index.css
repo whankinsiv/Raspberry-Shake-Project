@@ -9,27 +9,7 @@ body {
     height: 100%;
     margin: 0;
     width: 100vw;
-    background-color: #6C7A89;
-}
-
-@keyframes bg {
-
-    0%,
-    100% {
-        background-color: #1e90ff;
-    }
-
-    25% {
-        background-color: #228B22;
-    }
-
-    50% {
-        background-color: #ffe244;
-    }
-
-    75% {
-        background-color: #4B0082;
-    }
+    background-color: #FAFAFA;
 }
 
 #header {
