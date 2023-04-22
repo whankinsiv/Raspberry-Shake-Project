@@ -97,6 +97,7 @@ body {
 
 #addDevicePopup.active {
     display: flex;
+    flex-direction: column;
 }
 
 #addDeviceHeader {
