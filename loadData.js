@@ -25,12 +25,29 @@ function populateDashboard(numOfEntries) {
         newDiv.setAttribute("id", "deviceDashboardEntry");
         newDiv.innerHTML = `
          <h2>${devices[i]["deviceName"]}</h2>
+         <div><script>createMap(devices[i]["latitude"], devices[i]["longitude"])</script></div>
          <p>${devices[i]["longitude"]}, ${devices[i]["latitude"]}</p>
         `;
 
         // Add the new div to the deviceListMain element
         deviceDashboard.appendChild(newDiv);
     }
+}
+
+function createMap(latitude, longitude) {
+    var map = tt.map({
+        key: 'EVYA5y9tR2nwLASDZBMCtaE844hCfrTT',
+        container: 'map'
+
+    });
+
+    map.setStyle('tomtom://vector/1/basic-main');
+    var marker = new tt.Marker().setLngLat([longitude, latitude]).addTo(map);
+
+    map.setZoom(12);
+
+    var zoomControl = new tt.ZoomControl();
+    map.addControl(zoomControl);
 }
 
 
