@@ -104,9 +104,11 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 #addDeviceClose {
+    position: absolute;
     padding-left: 1vw;
 }
 
