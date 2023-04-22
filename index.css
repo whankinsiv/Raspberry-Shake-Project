@@ -7,6 +7,7 @@ html {
 body {
     overflow: auto;
     height: 100%;
+    min-height: 100vh;
     margin: 0;
     width: 100vw;
     background-color: #C3C3C3;
