@@ -109,3 +109,7 @@ body {
 #addDeviceClose {
     padding-left: 1vw;
 }
+
+#popupTitle {
+    margin: auto;
+}
