@@ -78,16 +78,12 @@ body {
 }
 
 #addDevicePopup {
-    background-color: #CED2CC;
+    background-color: black;
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    min-height: 300px;
-    width: 80%;
-    max-width: 800px;
-    border: 1px solid black;
-    z-index: 4;
+    transform: translate(-50%, -50%);
+    z-index: 100;
 }
 
 #addDevicePopup.active {}
