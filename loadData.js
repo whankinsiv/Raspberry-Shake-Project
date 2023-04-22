@@ -35,10 +35,10 @@ function populateDashboard(numOfEntries) {
     }
 }
 
-function createMap(latitude, longitude, div) {
+function createMap(latitude, longitude, mapDiv) {
     var map = tt.map({
         key: 'EVYA5y9tR2nwLASDZBMCtaE844hCfrTT',
-        container: div
+        container: mapDiv
 
     });
 
