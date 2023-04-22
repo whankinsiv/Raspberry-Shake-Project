@@ -10,10 +10,10 @@ body {
     margin: 0;
     width: 100vw;
     background:
-        radial-gradient(circle at bottom, white, transparent 80%),
-        linear-gradient(to top, dodgerblue 0%, transparent 70%),
-        linear-gradient(to bottom, transparent, rgba(white, 0.4) 70%),
-        blue;
+        radial-gradient(circle at bottom, #fff, transparent 80%),
+        linear-gradient(to top, #1e90ff 0%, transparent 70%),
+        linear-gradient(to bottom, transparent, rgba(#fff, 0.4) 70%),
+        #1e90ff;
     animation: bg 30s infinite;
 }
 
@@ -21,19 +21,19 @@ body {
 
     0%,
     100% {
-        background-color: blue;
+        background-color: #1e90ff;
     }
 
     25% {
-        background-color: green;
+        background-color: #39d24a;
     }
 
     50% {
-        background-color: yellow;
+        background-color: #ffe244;
     }
 
     75% {
-        background-color: pink;
+        background-color: #ff36a3;
     }
 }
 
