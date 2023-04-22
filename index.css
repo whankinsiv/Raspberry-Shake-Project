@@ -9,7 +9,7 @@ body {
     height: 100%;
     margin: 0;
     width: 100vw;
-    background-image: linear-gradient(to right, #5D3FD3, #3E5151);
+    background-image: radial-gradient(circle 311px at 8.6% 27.9%, rgba(62, 147, 252, 0.57) 12.9%, rgba(239, 183, 192, 0.44) 91.2%);
 }
 
 #header {
