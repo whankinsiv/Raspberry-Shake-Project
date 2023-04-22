@@ -109,8 +109,8 @@ body {
 
 #addDeviceClose {
     align-self: flex-end;
-    padding-left: 1vw;
-    padding-bottom: 1vh;
+    padding-left: 4px;
+    padding-bottom: 4px;
 }
 
 #popupTitle {
