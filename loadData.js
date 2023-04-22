@@ -25,7 +25,7 @@ function populateDashboard(numOfEntries) {
         newDiv.setAttribute("id", "deviceDashboardEntry");
         newDiv.innerHTML = `
          <h2>${devices[i]["deviceName"]}</h2>
-         <div id="map${i}"></div>
+         <div class="map" id="map${i}"></div>
          <p>${devices[i]["longitude"]}, ${devices[i]["latitude"]}</p>
         `;
 
