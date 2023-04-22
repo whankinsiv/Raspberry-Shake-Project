@@ -8,7 +8,7 @@ function closeAddDevicePopup() {
     addDevicePopup.classList.remove('active');
 }
 
-function submitForm() {
+async function submitForm() {
     var deviceName = document.getElementById("deviceName").value;
     var ipAddress = document.getElementById("ipAddress").value;
     var userName = document.getElementById("userName").value;
