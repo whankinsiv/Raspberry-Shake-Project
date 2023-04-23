@@ -17,12 +17,6 @@ async function submitForm() {
     var longitude = document.getElementById("longitude").value;
     var altitude = document.getElementById("altitude").value;
 
-    var ssh = new SSH2Prommise({
-        host: ipAddress,
-        username: userName,
-        password: password
-    });
-
     var script = "/addDevice.php?deviceName="
         + encodeURIComponent(deviceName)
         + "&ipAddress="
