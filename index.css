@@ -75,7 +75,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: calc(33% - 2%);
+    width: 31%;
     min-width: 160px;
     height: 275px;
     margin-top: 2%;
