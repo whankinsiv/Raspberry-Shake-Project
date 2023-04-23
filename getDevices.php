@@ -12,7 +12,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . mysqli_connect_error());
 }
 // Get the current listing id's and asking prices
-$query = "SELECT deviceName, longitude, latitude FROM Devices";
+$query = "SELECT deviceId, deviceName, longitude, latitude FROM Devices";
 $result = $conn->query($query);
 
 // Process the result
