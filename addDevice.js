@@ -17,21 +17,34 @@ async function submitForm() {
     var longitude = document.getElementById("longitude").value;
     var altitude = document.getElementById("altitude").value;
 
-    var script = "/addDevice.php?deviceName="
-        + encodeURIComponent(deviceName)
-        + "&ipAddress="
-        + encodeURIComponent(ipAddress)
-        + "&userName="
-        + encodeURIComponent(userName)
-        + "&password="
-        + encodeURIComponent(password)
-        + "&latitude="
-        + encodeURIComponent(latitude)
-        + "&longitude="
-        + encodeURIComponent(longitude)
-        + "&altitude="
-        + encodeURIComponent(altitude);
+    if ((latitude < 90) && (latitude > -90)) {
+        if ((longitude < 180) && (longitude > -180)) {
+            var script = "/addDevice.php?deviceName="
+                + encodeURIComponent(deviceName)
+                + "&ipAddress="
+                + encodeURIComponent(ipAddress)
+                + "&userName="
+                + encodeURIComponent(userName)
+                + "&password="
+                + encodeURIComponent(password)
+                + "&latitude="
+                + encodeURIComponent(latitude)
+                + "&longitude="
+                + encodeURIComponent(longitude)
+                + "&altitude="
+                + encodeURIComponent(altitude);
 
-    var response = await fetch(script);
-    location.reload();
+            var response = await fetch(script);
+            location.reload();
+        } else {
+            //Invalid longitude
+            var longitudeError = document.getElementById("longitudeError");
+            longitudeError.textContent = "Invalid longitude (-180 - 180)";
+
+        }
+    } else {
+        //Invalid latitude
+        var latitudeError = document.getElementById("latitudeError")
+        latitudeError.textContent = "Invalid latitude (-90 - 90)";
+    }
 }
