@@ -90,7 +90,7 @@ body {
 
 @media (max-width: 500px) {
     #deviceDashboardEntry {
-        width: 80%;
+        width: 80% !important;
         /* set width for 2 divs per row */
         margin-right: 10% !important;
         /* remove margin for last item in each row */
@@ -101,9 +101,9 @@ body {
 
 @media (max-width: 900px) {
     #deviceDashboardEntry {
-        width: 45%;
-        margin-right: 0%;
-        margin-left: 0%;
+        width: 45% !important;
+        margin-right: 0% !important;
+        margin-left: 0% !important;
     }
 
     #deviceDashboardEntry:first-child {
