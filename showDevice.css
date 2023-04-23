@@ -1,0 +1,136 @@
+html {
+    overflow: hidden;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    overflow: auto;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    width: 100vw;
+    background-color: #C3C3C3;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    min-height: 50px;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding-left: 3vw;
+}
+
+#title {
+    font-size: large;
+    font-weight: bold;
+}
+
+#mainContent {
+    border-top: 2px solid black;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#deviceList {
+    height: 100%;
+    min-width: 150px;
+    width: 20%;
+}
+
+#deviceListEntry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+#deviceListHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 6vh;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+#deviceInformation {
+    border-left: 2px solid black;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 2%;
+}
+
+#addDevicePopup {
+    background-color: #EAEAEA;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 80vw;
+    max-width: 300px;
+    height: 80vh;
+    max-height: 320px;
+    display: none;
+}
+
+#addDevicePopup.active {
+    display: flex;
+    flex-direction: column;
+}
+
+#addDeviceHeader {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#addDeviceClose {
+    align-self: flex-end;
+    padding-left: 1vw;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+#popupTitle {
+    margin: auto;
+}
+
+#addDeviceForm {
+    display: flex;
+    flex-direction: column;
+    min-height: 550px;
+    bottom: 0;
+    align-items: center;
+}
+
+#formEntry {
+    margin-top: 5px;
+}
+
+#submitFormButton {
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
