@@ -106,6 +106,17 @@ body {
     }
 }
 
+@media (max-width: 500px) {
+    #deviceDashboardEntry {
+        width: 80%;
+        /* set width for 2 divs per row */
+        margin-right: 10%;
+        /* remove margin for last item in each row */
+        margin-left: 10%;
+        /* remove margin to the left for each element */
+    }
+}
+
 .map {
     border: 1px solid black;
     border-radius: 5px;
