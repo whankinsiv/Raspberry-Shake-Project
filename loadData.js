@@ -23,7 +23,7 @@ function populateDashboard(numOfEntries) {
         // Create a new div for each device
         var newDiv = document.createElement("div");
         newDiv.setAttribute("id", "deviceDashboardEntry");
-        newDiv.setAttribute("onclick", "showDevice(" + devices[i][deviceId] + ")");
+        newDiv.setAttribute("onclick", "showDevice('" + devices[i][deviceId] + "')");
         newDiv.innerHTML = `
          <h2>${devices[i]["deviceName"]}</h2>
          <div class="map" id="map${i}"></div>
