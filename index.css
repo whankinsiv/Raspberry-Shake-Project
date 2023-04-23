@@ -75,11 +75,25 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: calc(33.3% - 2%);
     height: 275px;
     margin-top: 2vh;
     margin-right: 2%;
     margin-bottom: 2vh;
+}
+
+#deviceDashboardEntry:nth-child(3n) {
+    margin-right: 0;
+    /* remove margin for last item in each row */
+}
+
+@media (max-width: 767px) {
+    #deviceDashboardEntry {
+        width: calc(50% - 2%);
+        /* set width for 2 divs per row */
+        margin-right: 0;
+        /* remove margin for last item in each row */
+    }
 }
 
 .map {
