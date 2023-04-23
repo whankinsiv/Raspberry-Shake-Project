@@ -97,7 +97,7 @@ body {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     #deviceDashboardEntry {
         width: 45%;
         /* set width for 2 divs per row */
