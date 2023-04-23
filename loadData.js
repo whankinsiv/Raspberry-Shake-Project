@@ -45,6 +45,8 @@ function createMap(latitude, longitude, mapDiv) {
     var center = [longitude, latitude];
     map.setCenter(center);
     map.setZoom(14);
+
+    var marker = new tt.Marker().setLngLat(center).addTo(map);
 }
 
 
