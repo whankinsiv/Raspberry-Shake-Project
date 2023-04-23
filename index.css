@@ -200,5 +200,7 @@ body {
 }
 
 #submitFormButton {
+    display: flex;
     margin-top: 5px;
+    align-items: center;
 }
