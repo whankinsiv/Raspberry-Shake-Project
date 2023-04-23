@@ -39,4 +39,5 @@ async function submitForm() {
         + encodeURIComponent(altitude);
 
     var response = await fetch(script);
+    console.log(response);
 }
