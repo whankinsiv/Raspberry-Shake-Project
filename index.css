@@ -23,6 +23,10 @@ body {
     padding-left: 3vw;
 }
 
+#title {
+    font-size: large;
+}
+
 #mainContent {
     border-top: 2px solid black;
     width: 100%;
