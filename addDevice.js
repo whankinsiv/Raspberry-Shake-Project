@@ -39,21 +39,4 @@ async function submitForm() {
         + encodeURIComponent(altitude);
 
     var response = await fetch(script);
-    console.log(response);
-
-    ssh.exec('ls /opt/firmware')
-        .then(function (output) {
-            if (output.indexOf("sendData.py") >= 0) {
-                // Device information correct & includes firmware
-
-
-            } else {
-                // Valid device information but no firmware detected
-
-            }
-        })
-        .catch(function (error) {
-            // Invalid device information or firmware not detected
-
-        });
 }
