@@ -84,27 +84,15 @@ body {
 #deviceDashboardEntry:first-child {
     margin-left: 2%;
     margin-right: 2%;
-    /* remove margin for first element in each row */
 }
 
 #deviceDashboardEntry:nth-child(3n) {
     margin-left: 2%;
-    /* remove margin for last item in each row */
 }
 
 #deviceDashboardEntry:nth-child(3n+1) {
     margin-left: 2%;
     margin-right: 2%;
-    /* remove margin for last item in each row */
-}
-
-@media (max-width: 767px) {
-    #deviceDashboardEntry {
-        width: calc(50% - 2%);
-        /* set width for 2 divs per row */
-        margin-right: 0;
-        /* remove margin for last item in each row */
-    }
 }
 
 .map {
