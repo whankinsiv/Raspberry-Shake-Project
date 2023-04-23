@@ -88,19 +88,29 @@ body {
     margin-top: 2%;
 }
 
-@media (max-width: 10000px) {
+@media (max-width: 500px) {
+    #deviceDashboardEntry {
+        width: 80%;
+        /* set width for 2 divs per row */
+        margin-right: 10%;
+        /* remove margin for last item in each row */
+        margin-left: 10%;
+        /* remove margin to the left for each element */
+    }
+
     #deviceDashboardEntry:first-child {
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
-    #deviceDashboardEntry:nth-child(3n) {
-        margin-left: 2%;
+    #deviceDashboardEntry:nth-child(2n+1) {
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
-    #deviceDashboardEntry:nth-child(3n+1) {
-        margin-left: 2%;
-        margin-right: 2%;
+    #deviceDashboardEntry:nth-child(2n) {
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
 
@@ -132,29 +142,19 @@ body {
 
 }
 
-@media (max-width: 500px) {
-    #deviceDashboardEntry {
-        width: 80%;
-        /* set width for 2 divs per row */
-        margin-right: 10%;
-        /* remove margin for last item in each row */
-        margin-left: 10%;
-        /* remove margin to the left for each element */
-    }
-
+@media (max-width: 10000px) {
     #deviceDashboardEntry:first-child {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
-    #deviceDashboardEntry:nth-child(2n+1) {
-        margin-left: 10%;
-        margin-right: 10%;
+    #deviceDashboardEntry:nth-child(3n) {
+        margin-left: 2%;
     }
 
-    #deviceDashboardEntry:nth-child(2n) {
-        margin-left: 10%;
-        margin-right: 10%;
+    #deviceDashboardEntry:nth-child(3n+1) {
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
 
