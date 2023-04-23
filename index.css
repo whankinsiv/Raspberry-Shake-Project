@@ -92,6 +92,11 @@ body {
 
     }
 
+    #deviceDashboardEntry:nth-child(2n) {
+        margin-left: 2%;
+        margin-right: 0%;
+    }
+
     #deviceDashboardEntry:first-child {
         margin-left: 0%;
         margin-right: 0%;
