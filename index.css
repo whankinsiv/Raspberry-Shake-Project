@@ -75,28 +75,25 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: calc(33.3% - 2%);
     min-width: 160px;
     height: 275px;
-    margin-top: 2vh;
-    margin-right: 2%;
-    margin-bottom: 2vh;
-    margin-left: 2%;
-    padding-left: 2%;
 }
 
 #deviceDashboardEntry:first-child {
-    margin-left: 0;
+    margin-left: 2%;
+    margin-right: 2%;
     /* remove margin for first element in each row */
 }
 
 #deviceDashboardEntry:nth-child(3n) {
-    margin-right: 0;
+    margin-left: 2%;
     /* remove margin for last item in each row */
 }
 
 #deviceDashboardEntry:nth-child(3n+1) {
-    margin-left: 0;
+    margin-left: 2%;
+    margin-right: 2%;
     /* remove margin for last item in each row */
 }
 
