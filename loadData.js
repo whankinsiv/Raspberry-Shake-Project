@@ -36,6 +36,11 @@ function populateDashboard(numOfEntries) {
     }
 }
 
+function showDevice(deviceId) {
+    var link = "showDevice.html?deviceId=" + deviceId;
+    window.location.href = link
+}
+
 function createMap(latitude, longitude, mapDiv) {
     var map = tt.map({
         key: 'EVYA5y9tR2nwLASDZBMCtaE844hCfrTT',
