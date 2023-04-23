@@ -19,6 +19,7 @@ async function submitForm() {
 
     var longitudeError = document.getElementById("longitudeError");
     var latitudeError = document.getElementById("latitudeError")
+    console.log(longitude);
 
     if ((latitude < 90) && (latitude > -90) && (latitude != null)) {
         latitudeError.textContent = '';
