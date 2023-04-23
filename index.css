@@ -194,3 +194,11 @@ body {
     bottom: 0;
     align-items: center;
 }
+
+#formEntry {
+    margin-top: 5px;
+}
+
+#submitFormButton {
+    margin-top: 5px;
+}
