@@ -1,4 +1,4 @@
-function loadData() {
+function loadDevice() {
     console.log("Device Info from DB");
     fetch('/getDevices.php')
         .then(response => response.json())
