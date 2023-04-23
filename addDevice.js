@@ -39,5 +39,4 @@ async function submitForm() {
         + encodeURIComponent(altitude);
 
     var response = await fetch(script);
-    location.reload();
 }
