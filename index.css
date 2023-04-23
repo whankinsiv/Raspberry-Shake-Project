@@ -63,7 +63,7 @@ body {
     height: 100%;
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
     padding-left: 2%;
