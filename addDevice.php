@@ -1,7 +1,7 @@
 <?php
     $deviceName = $_GET['deviceName'];
     $ipAddress = $_GET['ipAddress'];
-    $username = $_GET['username'];
+    $user = $_GET['username'];
     $pass = $_GET['password'];
     $latitude = $_GET['latitude'];
     $longitude = $_GET['longitude'];
@@ -21,7 +21,7 @@
     }
     
     // Get the current listing id's and asking prices
-    $query = "INSERT INTO Devices (deviceName, ipAddress, username, password, latitude, longitude, altitude) VALUES ('$deviceName', '$ipAddress', '$username', '$pass', '$latitude', '$longitude', '$altitude')";
+    $query = "INSERT INTO Devices (deviceName, ipAddress, username, password, latitude, longitude, altitude) VALUES ('$deviceName', '$ipAddress', '$user', '$pass', '$latitude', '$longitude', '$altitude')";
     $result = mysqli_query($conn, $query);
     
     // Check if query was successful
