@@ -92,25 +92,21 @@ body {
 
     }
 
+    #deviceDashboardEntry:first-child {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #deviceDashboardEntry:nth-child(2n+1) {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
     #deviceDashboardEntry:nth-child(2n) {
         margin-left: 2%;
         margin-right: 0%;
     }
 
-    #deviceDashboardEntry:first-child {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    #deviceDashboardEntry:nth-child(3n) {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    #deviceDashboardEntry:nth-child(3n+1) {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
 }
 
 @media (max-width: 500px) {
