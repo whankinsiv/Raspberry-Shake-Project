@@ -66,8 +66,6 @@ body {
     justify-content: flex-start;
     align-content: flex-start;
     flex-wrap: wrap;
-    padding-left: 2%;
-    padding-right: 2%;
 }
 
 #deviceDashboardEntry {
