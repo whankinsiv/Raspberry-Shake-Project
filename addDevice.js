@@ -17,6 +17,9 @@ async function submitForm() {
     var longitude = document.getElementById("longitude").value;
     var altitude = document.getElementById("altitude").value;
 
+    var longitudeError = document.getElementById("longitudeError");
+    var latitudeError = document.getElementById("latitudeError")
+
     if ((latitude < 90) && (latitude > -90)) {
         latitudeError.textContent = '';
         if ((longitude < 180) && (longitude > -180)) {
@@ -40,13 +43,11 @@ async function submitForm() {
             location.reload();
         } else {
             //Invalid longitude
-            var longitudeError = document.getElementById("longitudeError");
             longitudeError.textContent = 'Invalid longitude (-180 - 180)';
 
         }
     } else {
         //Invalid latitude
-        var latitudeError = document.getElementById("latitudeError")
         latitudeError.textContent = 'Invalid latitude (-90 - 90)';
     }
 }
