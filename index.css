@@ -99,9 +99,9 @@ body {
     #deviceDashboardEntry {
         width: 45%;
         /* set width for 2 divs per row */
-        margin-right: 0;
+        margin-right: 0%;
         /* remove margin for last item in each row */
-        margin-left: 0;
+        margin-left: 0%;
         /* remove margin to the left for each element */
     }
 }
