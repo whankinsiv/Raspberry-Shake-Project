@@ -24,6 +24,11 @@ body {
     padding-left: 3vw;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 #title {
     font-size: large;
     font-weight: bold;
