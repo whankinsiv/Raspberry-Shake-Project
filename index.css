@@ -89,6 +89,22 @@ body {
         /* remove margin for last item in each row */
         margin-left: 0%;
         /* remove margin to the left for each element */
+
+    }
+
+    #deviceDashboardEntry:first-child {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    #deviceDashboardEntry:nth-child(3n) {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    #deviceDashboardEntry:nth-child(3n+1) {
+        margin-left: 0%;
+        margin-right: 0%;
     }
 }
 
