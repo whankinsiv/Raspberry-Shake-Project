@@ -24,23 +24,31 @@ async function submitForm() {
         latitudeError.textContent = '';
         if ((longitude < 180) && (longitude > -180)) {
             longitudeError.textContent = '';
-            var script = "/addDevice.php?deviceName="
-                + encodeURIComponent(deviceName)
-                + "&ipAddress="
-                + encodeURIComponent(ipAddress)
-                + "&userName="
-                + encodeURIComponent(userName)
-                + "&password="
-                + encodeURIComponent(password)
-                + "&latitude="
-                + encodeURIComponent(latitude)
-                + "&longitude="
-                + encodeURIComponent(longitude)
-                + "&altitude="
-                + encodeURIComponent(altitude);
+            if (ipAddress != '') {
+                if (userName != '') {
+                    if (password != '') {
+                        if (altitude != null) {
+                            var script = "/addDevice.php?deviceName="
+                                + encodeURIComponent(deviceName)
+                                + "&ipAddress="
+                                + encodeURIComponent(ipAddress)
+                                + "&userName="
+                                + encodeURIComponent(userName)
+                                + "&password="
+                                + encodeURIComponent(password)
+                                + "&latitude="
+                                + encodeURIComponent(latitude)
+                                + "&longitude="
+                                + encodeURIComponent(longitude)
+                                + "&altitude="
+                                + encodeURIComponent(altitude);
 
-            var response = await fetch(script);
-            location.reload();
+                            var response = await fetch(script);
+                            location.reload();
+                        }
+                    }
+                }
+            }
         } else {
             //Invalid longitude
             longitudeError.textContent = 'Invalid longitude (-180 - 180)';
