@@ -14,7 +14,7 @@
     
     // Create connection
     $conn = new mysqli($servername, $username, $password, $database);
-    
+    echo("In PHP");
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . mysqli_connect_error());
