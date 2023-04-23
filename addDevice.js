@@ -23,17 +23,22 @@ async function submitForm() {
     var usernameError = document.getElementById("usernameError");
     var ipError = document.getElementById("ipError");
     var nameError = document.getElementById("nameError");
+    var altitudeError = document.getElementById("altitudeError")
 
     if (deviceName != '') {
-
+        nameError.textContent = '';
         if (ipAddress != '') {
+            ipError.textContent = '';
             if (userName != '') {
+                usernameError.textContent = '';
                 if (password != '') {
+                    passwordError.textContent = '';
                     if ((latitude <= 90) && (latitude >= -90) && (latitude != '')) {
                         latitudeError.textContent = '';
                         if ((longitude <= 180) && (longitude >= -180) && (longitude != '')) {
                             longitudeError.textContent = '';
                             if (altitude != null) {
+                                altitudeError.textContent = '';
                                 var script = "/addDevice.php?deviceName="
                                     + encodeURIComponent(deviceName)
                                     + "&ipAddress="
