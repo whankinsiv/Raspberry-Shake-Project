@@ -2,10 +2,10 @@
     $deviceName = $_GET['deviceName'];
     $ipAddress = $_GET['ipAddress'];
     $username = $_GET['username'];
-    $password = $_GET('password');
-    $latitude = $_GET('latitude');
-    $longitude = $_GET('longitude');
-    $altitude = $_GET('altitude');
+    $password = $_GET['password'];
+    $latitude = $_GET['latitude'];
+    $longitude = $_GET['longitude'];
+    $altitude = $_GET['altitude'];
 
     $servername = "localhost";
     $database = "u215124131_ERP";
