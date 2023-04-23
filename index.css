@@ -134,31 +134,6 @@ body {
         margin-left: 10%;
         /* remove margin to the left for each element */
     }
-
-    #deviceDashboardEntry:first-child {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #deviceDashboardEntry:nth-child(2n+1) {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #deviceDashboardEntry:nth-child(2n) {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #deviceDashboardEntry:nth-child(3n+1) {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #deviceDashboardEntry:nth-child(3n) {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
 }
 
 .map {
