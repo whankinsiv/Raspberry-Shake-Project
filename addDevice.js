@@ -21,9 +21,9 @@ async function submitForm() {
     var latitudeError = document.getElementById("latitudeError")
     console.log(longitude);
 
-    if ((latitude < 90) && (latitude > -90) && (latitude != null)) {
+    if ((latitude < 90) && (latitude > -90) && (latitude != '')) {
         latitudeError.textContent = '';
-        if ((longitude < 180) && (longitude > -180) && (longitude != null)) {
+        if ((longitude < 180) && (longitude > -180) && (longitude != '')) {
             longitudeError.textContent = '';
             if (ipAddress != '') {
                 if (userName != '') {
