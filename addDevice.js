@@ -39,12 +39,12 @@ async function submitForm() {
         } else {
             //Invalid longitude
             var longitudeError = document.getElementById("longitudeError");
-            longitudeError.textContent = "Invalid longitude (-180 - 180)";
+            longitudeError.textContent = 'Invalid longitude (-180 - 180)';
 
         }
     } else {
         //Invalid latitude
         var latitudeError = document.getElementById("latitudeError")
-        latitudeError.textContent = "Invalid latitude (-90 - 90)";
+        latitudeError.textContent = 'Invalid latitude (-90 - 90)';
     }
 }
