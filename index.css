@@ -78,6 +78,7 @@ body {
     width: calc(33.3% - 2%);
     min-width: 160px;
     height: 275px;
+    margin-top: 2%;
 }
 
 #deviceDashboardEntry:first-child {
