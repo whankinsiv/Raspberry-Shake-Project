@@ -37,7 +37,7 @@ async function submitForm() {
                         latitudeError.textContent = '';
                         if ((longitude <= 180) && (longitude >= -180) && (longitude != '')) {
                             longitudeError.textContent = '';
-                            if (altitude != null) {
+                            if (altitude != '') {
                                 altitudeError.textContent = '';
                                 var script = "/addDevice.php?deviceName="
                                     + encodeURIComponent(deviceName)
