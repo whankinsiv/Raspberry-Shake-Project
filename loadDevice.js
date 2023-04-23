@@ -25,3 +25,9 @@ function populateList(numOfEntries) {
             <div id="deviceListEntry" onClick="addDevicePushed()">Add New Device</div>
         `;
 }
+
+function showDevice(deviceId) {
+    console.log("Go to next page");
+    var link = "showDevice.html?deviceId=" + deviceId;
+    window.location.href = link
+}
