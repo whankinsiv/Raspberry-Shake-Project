@@ -18,7 +18,9 @@ async function submitForm() {
     var altitude = document.getElementById("altitude").value;
 
     if ((latitude < 90) && (latitude > -90)) {
+        latitudeError.textContent = '';
         if ((longitude < 180) && (longitude > -180)) {
+            longitudeError.textContent = '';
             var script = "/addDevice.php?deviceName="
                 + encodeURIComponent(deviceName)
                 + "&ipAddress="
