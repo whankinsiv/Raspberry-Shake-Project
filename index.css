@@ -192,4 +192,5 @@ body {
     flex-direction: column;
     min-height: 550px;
     bottom: 0;
+    justify-content: center;
 }
