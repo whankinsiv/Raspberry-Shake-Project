@@ -18,45 +18,66 @@ async function submitForm() {
     var altitude = document.getElementById("altitude").value;
 
     var longitudeError = document.getElementById("longitudeError");
-    var latitudeError = document.getElementById("latitudeError")
-    console.log(longitude);
+    var latitudeError = document.getElementById("latitudeError");
+    var passwordError = document.getElementById("passwordError");
+    var usernameError = document.getElementById("usernameError");
+    var ipError = document.getElementById("ipError");
+    var nameError = document.getElementById("nameError");
 
-    if ((latitude < 90) && (latitude > -90) && (latitude != '')) {
-        latitudeError.textContent = '';
-        if ((longitude < 180) && (longitude > -180) && (longitude != '')) {
-            longitudeError.textContent = '';
-            if (ipAddress != '') {
-                if (userName != '') {
-                    if (password != '') {
-                        if (altitude != null) {
-                            var script = "/addDevice.php?deviceName="
-                                + encodeURIComponent(deviceName)
-                                + "&ipAddress="
-                                + encodeURIComponent(ipAddress)
-                                + "&userName="
-                                + encodeURIComponent(userName)
-                                + "&password="
-                                + encodeURIComponent(password)
-                                + "&latitude="
-                                + encodeURIComponent(latitude)
-                                + "&longitude="
-                                + encodeURIComponent(longitude)
-                                + "&altitude="
-                                + encodeURIComponent(altitude);
+    if (deviceName != '') {
 
-                            var response = await fetch(script);
-                            location.reload();
+        if (ipAddress != '') {
+            if (userName != '') {
+                if (password != '') {
+                    if ((latitude <= 90) && (latitude >= -90) && (latitude != '')) {
+                        latitudeError.textContent = '';
+                        if ((longitude <= 180) && (longitude >= -180) && (longitude != '')) {
+                            longitudeError.textContent = '';
+                            if (altitude != null) {
+                                var script = "/addDevice.php?deviceName="
+                                    + encodeURIComponent(deviceName)
+                                    + "&ipAddress="
+                                    + encodeURIComponent(ipAddress)
+                                    + "&userName="
+                                    + encodeURIComponent(userName)
+                                    + "&password="
+                                    + encodeURIComponent(password)
+                                    + "&latitude="
+                                    + encodeURIComponent(latitude)
+                                    + "&longitude="
+                                    + encodeURIComponent(longitude)
+                                    + "&altitude="
+                                    + encodeURIComponent(altitude);
+
+                                var response = await fetch(script);
+                                location.reload();
+                            } else {
+                                //Invalid altitude
+                                altitudeError.textContent = 'Please enter the altitude.'
+                            }
+                        } else {
+                            //Invalid longitude
+                            longitudeError.textContent = 'Invalid longitude. (-180 - 180)';
                         }
+                    } else {
+                        //Invalid latitude
+                        latitudeError.textContent = 'Invalid latitude. (-90 - 90)';
                     }
+                } else {
+                    //Invalid password
+                    passwordError.textContent = 'Please enter a password.';
                 }
+            } else {
+                //Invalid username
+                usernameError.textContent = 'Please enter a device username.';
             }
-        } else {
-            //Invalid longitude
-            longitudeError.textContent = 'Invalid longitude (-180 - 180)';
 
+        } else {
+            //Invalid ip address
+            ipError.textContent = 'Please enter the device IP address.';
         }
     } else {
-        //Invalid latitude
-        latitudeError.textContent = 'Invalid latitude (-90 - 90)';
+        //Invalid device name
+        nameError.textContent = 'Please enter a device name.';
     }
 }
