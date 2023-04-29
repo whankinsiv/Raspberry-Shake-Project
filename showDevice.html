@@ -38,69 +38,55 @@
 
  
         
-        
+        <div class="header2">
+  <div class="device-activity">
+    <div class="device-info">
+      <h2><strong>Device #1</strong></h2>
+      <p>123 Main Street, Anytown, Africa</p>
+    </div>
+    <div class="activity-counter" id="activity-counter">
+    </div>
+  </div>
+  <hr style="width: 100%; height: 2px; background-color: black;">
+  <div class="activity-log-container">
+    <h2>Activity log</h2>
+    <div class="activity-log">
+      <p><strong>Lion:</strong> April 28, 2023 at 2:30 PM</p>
+      <p><strong>Lion:</strong> April 28, 2023 at 2:45 PM</p>
+      <p><strong>Elephant:</strong> April 28, 2023 at 3:15 PM</p>
+      <p><strong>Giraffe:</strong> April 28, 2023 at 4:00 PM</p>
+      <p><strong>Rhinoceros:</strong> April 28, 2023 at 5:30 PM</p>
+    </div>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+
+<script>
+  const activityLog = document.querySelectorAll('.activity-log p');
+  const activityCounter = {};
+  
+  activityLog.forEach(log => {
+    const animal = log.querySelector('strong').innerText;
+    if (activityCounter[animal]) {
+      activityCounter[animal]++;
+    } else {
+      activityCounter[animal] = 1;
+    }
+  });
+  
+  const activityCounterElement = document.getElementById('activity-counter');
+  
+  for (const animal in activityCounter) {
+    const count = activityCounter[animal];
+    const animalCountElement = document.createElement('p');
+    animalCountElement.innerHTML = `<strong>${animal}:</strong> ${count}`;
+    activityCounterElement.appendChild(animalCountElement);
+  }
+</script>
+
         
         
    
-<div class="header2">
-      <h2><strong>Device #<span id="device-number"></span></strong></h2>
-      <p><span id="device-address"></span></p>
-      <p><strong>Activity Count:</strong> <span id="activity-count"></span></p>
-    </div>
-    <hr>
-    <div class="activity-log">
-      <h3>Activity Log</h3>
-      <ul id="activity-list">
-        <!-- your activity log entries here -->
-      </ul>
-    </div>
-    <script>
-      // extract deviceId and deviceAddress from URL
-      const urlParams = new URLSearchParams(window.location.search);
-      const deviceId = urlParams.get('deviceId');
-      const deviceAddress = "Random Address"; // replace with your random address
-
-      // set content of device info elements
-      const deviceNumberElement = document.getElementById('device-number');
-      deviceNumberElement.textContent = deviceId;
-
-      const deviceAddressElement = document.getElementById('device-address');
-      deviceAddressElement.textContent = deviceAddress;
-
-      // initialize activity count for each animal type
-      const activityCount = {
-        lion: 0,
-        elephant: 0,
-        giraffe: 0,
-        zebra: 0,
-        cheetah: 0
-      };
-
-      // update activity count and log new activity
-      function logActivity(animal) {
-        // update activity count
-        activityCount[animal]++;
-
-        // update activity count display
-        const activityCountElement = document.getElementById('activity-count');
-        const totalActivity = Object.values(activityCount).reduce((a, b) => a + b, 0);
-        activityCountElement.textContent = totalActivity;
-
-        // add new activity to activity log
-        const activityListElement = document.getElementById('activity-list');
-        const now = new Date();
-        const activityItem = document.createElement('li');
-        activityItem.textContent = animal + " at " + now.toLocaleString();
-        activityListElement.appendChild(activityItem);
-        // add a line break after the activity item
-        const lineBreak = document.createElement('hr');
-        activityListElement.appendChild(lineBreak);
-      }
-
-      // example usage of logActivity function
-      logActivity('lion');
-      logActivity('giraffe');
-    </script>
 
 
         
