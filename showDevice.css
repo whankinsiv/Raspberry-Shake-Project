@@ -74,7 +74,7 @@ a {
 #deviceInformation {
     border-left: 2px solid black;
     height: 100%;
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
 }
