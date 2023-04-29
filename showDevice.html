@@ -37,11 +37,17 @@
         </div>
 
  
-        
+        <script>
+        // Get the HTML element for the device name
+        var deviceNameElement = document.getElementById('device-name');
+
+        // Set the text content to the retrieved device name
+        deviceNameElement.textContent = deviceName;
+
+        </script>
         <div id="deviceInformation">
             <div class="device-info">
-                    var deviceNameElement = document.getElementById('deviceName');
-                    deviceNameElement.textContent = deviceName;
+                <h2><strong id="device-name"></strong></h2>
                 <p>123 Main Street, Anytown, Africa</p>
             </div>
             <div class="activity-counter" id="activity-counter">
@@ -60,6 +66,7 @@
 </div>
 
 <script>
+    
   const activityLog = document.querySelectorAll('.activity-log p');
   const activityCounter = {};
   
