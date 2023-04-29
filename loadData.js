@@ -63,7 +63,7 @@ function populateList(numOfEntries) {
         // Create a new div for each device
 
         deviceList.innerHTML += `
-            <div class= "map" id="deviceListEntry" onclick="showDevice(${devices[i]["deviceId"]})">${devices[i]["deviceName"]}</div>
+            <div id="deviceListEntry" onclick="showDevice(${devices[i]["deviceId"]})">${devices[i]["deviceName"]}</div>
         `;
     }
     deviceList.innerHTML += `
