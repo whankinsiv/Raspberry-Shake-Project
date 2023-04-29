@@ -67,9 +67,9 @@
 
 <script>
    const urlParams = new URLSearchParams(window.location.search);
-      const deviceId = urlParams.get('deviceId');
-      const deviceNumberElement = document.getElementById('device-number');
-      deviceNumberElement.textContent = deviceId; 
+   const deviceId = urlParams.get('deviceId');
+   const deviceNumberElement = document.getElementById('device-number');
+   deviceNumberElement.textContent = deviceId; 
     
   const activityLog = document.querySelectorAll('.activity-log p');
   const activityCounter = {};
