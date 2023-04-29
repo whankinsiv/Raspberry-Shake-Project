@@ -39,7 +39,7 @@ a {
     width: 100%;
     background-size: cover;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-grow: 1;
 }
 
