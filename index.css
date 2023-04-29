@@ -55,7 +55,8 @@ a {
     align-items: center;
     height: 6vh;
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 0px;
     cursor: pointer;
 }
 
@@ -66,7 +67,8 @@ a {
     font-weight: bold;
     height: 6vh;
     width: 100%;
-    border-bottom: 1px solid black;
+    border-radius: 0px;
+    border-bottom: 2px solid black;
 }
 
 #deviceDashboard {
