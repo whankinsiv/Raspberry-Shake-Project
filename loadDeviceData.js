@@ -5,7 +5,7 @@ window.onload = function() {
   
   // Make an AJAX request to the PHP script
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'your_php_script.php?deviceId=' + deviceId, true);
+  xhr.open('GET', 'getDeviceData.php?deviceId=' + deviceId, true);
   xhr.onload = function() {
     if (xhr.status === 200) {
       // Parse the JSON response
