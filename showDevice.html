@@ -16,6 +16,14 @@
     <script src='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps-web.min.js'></script>
     <script src="loadDevice.js"></script>
     <script src="addDevice.js"></script>
+    <script>
+        // Get the HTML element for the device name
+        var deviceNameElement = document.getElementById('device-name');
+
+        // Set the text content to the retrieved device name
+        deviceNameElement.textContent = deviceName;
+
+        </script>
 </head>
 
 <body>
@@ -35,30 +43,21 @@
 
             </div>
         </div>
-
- 
-        <script>
-        // Get the HTML element for the device name
-        var deviceNameElement = document.getElementById('device-name');
-
-        // Set the text content to the retrieved device name
-        deviceNameElement.textContent = deviceName;
-
-        </script>
         <div id="deviceInformation">
+            <div id="infoHeader">
+                <div id="returnHomeButton" onclick="returnHome()">
+                    <img src="/backicon.png" alt="Return to Dashboard" width="32" height="32">
+                </div>
+                <div id="deviceName">
+                </div>
+            </div>
             <div class="device-info">
-                <h2><strong id="device-name"></strong></h2>
-                <p>123 Main Street, Anytown, Africa</p>
+                
             </div>
             <div class="activity-counter" id="activity-counter">
-                <div class="activity-log-container">
+                <div id="activity-log-container">
                     <h2>Activity log</h2>
-                    <div class="activity-log">
-                    <p><strong>Lion:</strong> April 28, 2023 at 2:30 PM</p>
-                    <p><strong>Lion:</strong> April 28, 2023 at 2:45 PM</p>
-                    <p><strong>Elephant:</strong> April 28, 2023 at 3:15 PM</p>
-                    <p><strong>Giraffe:</strong> April 28, 2023 at 4:00 PM</p>
-                    <p><strong>Rhinoceros:</strong> April 28, 2023 at 5:30 PM</p>
+                    <div id="activity-log">
                 </div>
             </div>
         </div>
