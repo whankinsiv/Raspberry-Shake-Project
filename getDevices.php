@@ -11,7 +11,7 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
   die("Connection failed: " . mysqli_connect_error());
 }
-// Get the current listing id's and asking prices
+
 $query = "SELECT deviceId, deviceName, longitude, latitude FROM Devices";
 $result = $conn->query($query);
 
