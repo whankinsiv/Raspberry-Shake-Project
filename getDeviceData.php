@@ -1,4 +1,6 @@
 <?php
+$deviceId = $_GET['deviceId'];
+
 $servername = "localhost";
 $database = "u215124131_ERP";
 $username = "u215124131_admin";
@@ -12,7 +14,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . mysqli_connect_error());
 }
 // Get the current listing id's and asking prices
-$query = "SELECT deviceId, latitude, longitude, altitude FROM Devices";
+$query = "SELECT deviceName, latitude, longitude, altitude FROM Devices WHERE deviceId = '$deviceId';";
 $result = $conn->query($query);
 
 // Process the result
