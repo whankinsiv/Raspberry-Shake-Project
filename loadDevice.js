@@ -15,7 +15,7 @@ function loadDevice() {
 
 function loadDeviceInfo() {
     
-    //getDeviceId from URL
+    // get device based on URL
     var queryString = window.location.search;
 
     // Parse the query string into a URLSearchParams object
@@ -24,9 +24,14 @@ function loadDeviceInfo() {
     // Get the value of the "deviceId" parameter
     var deviceID = parseInt(searchParams.get("deviceId"));
     
+    // Set device
+    var device = devices.find(function(d) {
+        return d.deviceID === deviceID;
+    });
+    
     // Populate device name
     var deviceNameDiv = document.getElementById("deviceName");
-    deviceNameDiv.innerHTML = devices[deviceID-1]["deviceName"];
+    deviceNameDiv.innerHTML = device.deviceName;
 }
 
 function populateList(numOfEntries) {
