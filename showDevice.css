@@ -103,6 +103,14 @@ a {
     flex-direction: column;
 }
 
+#deviceInfoMap {
+    postion: absolute;
+    width: 400px;
+    height: 400px;
+    top: 0;
+    right: 0;
+}
+
 #activityLogHeader {
     height: 6vh;
     border-top: 2px solid black;
