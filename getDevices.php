@@ -12,7 +12,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$query = "SELECT deviceId, deviceName, longitude, latitude FROM Devices";
+$query = "SELECT deviceId, deviceName, longitude, latitude, altitude FROM Devices";
 $result = $conn->query($query);
 
 // Process the result
