@@ -28,6 +28,7 @@ function loadDeviceInfo() {
     var device = devices.find(function(d) {
         return d[0] === deviceID;
     });
+    console.log(device);
     console.log(device.altitude);
     
     // Populate device name
