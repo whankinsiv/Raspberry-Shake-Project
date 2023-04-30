@@ -16,7 +16,7 @@ function loadDevice() {
 function loadDeviceInfo() {
     // Populate device name
     var deviceNameDiv = document.getElementById("deviceName");
-    deviceNameDiv.innerHTML = devices[deviceId]["deviceName");
+    deviceNameDiv.innerHTML = devices[deviceId]["deviceName"];
 }
 
 function populateList(numOfEntries) {
