@@ -30,7 +30,7 @@ function loadDeviceInfo() {
     });
     
     // Populate device name
-    var deviceNameDiv = document.getElementById("deviceName");
+    var deviceNameDiv = document.getElementById("deviceNameText");
     deviceNameDiv.innerHTML = device.deviceName;
     
     // Populate device lattitude, longitude, and altitude
