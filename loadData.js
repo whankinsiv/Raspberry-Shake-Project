@@ -49,7 +49,7 @@ function createMap(latitude, longitude, mapDiv) {
 
     });
 
-    var center = [longitude, latitude];
+    var center = [latitude, longitude];
     map.setCenter(center);
     map.setZoom(14);
 
