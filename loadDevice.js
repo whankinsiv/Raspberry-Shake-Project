@@ -33,7 +33,7 @@ function loadDeviceInfo() {
     var deviceNameDiv = document.getElementById("deviceName");
     deviceNameDiv.innerHTML = device.deviceName;
     
-    // Populate device lattitude & longitude
+    // Populate device lattitude, longitude, and altitude
     var deviceInfoDiv = document.getElementById("device-info");
     
     deviceInfoDiv.innerHTML += `
@@ -41,6 +41,21 @@ function loadDeviceInfo() {
         <div id="deviceLongitude">Longitude: ${device.longitude}</div>
         <div id="deviceAltitude">Altitude: $(device.altitude}</div>
     `;
+    
+    // Display map
+    var mapDiv = document.getElementById("deviceInfoMap");
+    
+    var map = tt.map({
+        key: 'EVYA5y9tR2nwLASDZBMCtaE844hCfrTT',
+        container: mapDiv
+
+    });
+
+    var center = [device.latitude, device.longitude];
+    map.setCenter(center);
+    map.setZoom(14);
+
+    var marker = new tt.Marker().setLngLat(center).addTo(map);
     
 }
 
