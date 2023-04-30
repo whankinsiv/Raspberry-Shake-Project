@@ -99,6 +99,8 @@ a {
     padding-left: 2%;
     padding-top: 1vh;
     min-height: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 #activityLogHeader {
