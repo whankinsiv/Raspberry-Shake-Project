@@ -31,3 +31,8 @@ function showDevice(deviceId) {
     var link = "showDevice.html?deviceId=" + deviceId;
     window.location.href = link
 }
+
+function returnHome() {
+    var link = "https://databasemls.online";
+    window.location.href = link;
+}
