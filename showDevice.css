@@ -132,6 +132,7 @@ a {
     height:3vh;
     display: flex;
     align-items: center;
+    justify-contents: center;
     padding-top: 1vh;
 }
 
