@@ -57,31 +57,6 @@
             </div>
         </div>
     </div>
-</div>
-
-<script>
-    
-  const activityLog = document.querySelectorAll('.activity-log p');
-  const activityCounter = {};
-  
-  activityLog.forEach(log => {
-    const animal = log.querySelector('strong').innerText;
-    if (activityCounter[animal]) {
-      activityCounter[animal]++;
-    } else {
-      activityCounter[animal] = 1;
-    }
-  });
-  
-  const activityCounterElement = document.getElementById('activity-counter');
-  
-  for (const animal in activityCounter) {
-    const count = activityCounter[animal];
-    const animalCountElement = document.createElement('p');
-    animalCountElement.innerHTML = `<strong>${animal}:</strong> ${count}`;
-    activityCounterElement.appendChild(animalCountElement);
-  }
-</script>
     <div id="addDevicePopup">
         <div id="addDeviceHeader">
             <div id="addDeviceClose" onClick="closeAddDevicePopup()">
@@ -142,5 +117,27 @@
     </div>
 
 </body>
-
+<script>
+    
+  const activityLog = document.querySelectorAll('.activity-log p');
+  const activityCounter = {};
+  
+  activityLog.forEach(log => {
+    const animal = log.querySelector('strong').innerText;
+    if (activityCounter[animal]) {
+      activityCounter[animal]++;
+    } else {
+      activityCounter[animal] = 1;
+    }
+  });
+  
+  const activityCounterElement = document.getElementById('activity-counter');
+  
+  for (const animal in activityCounter) {
+    const count = activityCounter[animal];
+    const animalCountElement = document.createElement('p');
+    animalCountElement.innerHTML = `<strong>${animal}:</strong> ${count}`;
+    activityCounterElement.appendChild(animalCountElement);
+  }
+</script>
 </html>
