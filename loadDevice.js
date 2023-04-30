@@ -80,6 +80,7 @@ function showDevice(deviceId) {
 }
 
 async function removeDevice(deviceId) {
+    console.log(deviceId);
     // get device based on URL
     var queryString = window.location.search;
 
@@ -91,6 +92,7 @@ async function removeDevice(deviceId) {
     
     var script = "/removeDevice.php?deviceId=" + deviceId;
     var response = await fetch(script);
+    console.log(response);
     returnHome();
 }
 
