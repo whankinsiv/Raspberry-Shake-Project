@@ -21,12 +21,6 @@ if ($conn->query($query) === TRUE) {
   echo "Error deleting device: " . $conn->error;
 }
 
-// Process the result
-while ($row = $result->fetch_array()) {
-  $data[] = $row;
-}
-echo json_encode($data);
-
 // Close the connection
 mysqli_close($conn);
 
