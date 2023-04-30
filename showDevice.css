@@ -106,8 +106,8 @@ a {
 
 #deviceInfoMap {
     position: absolute; 
-    width: 400px;
-    height: 300px;
+    width: 20vw;
+    height: 15vh;
     top: 0;
     right: 0;
 }
