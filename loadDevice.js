@@ -36,6 +36,16 @@ function loadDeviceInfo() {
     // Populate device name
     var deviceNameDiv = document.getElementById("deviceName");
     deviceNameDiv.innerHTML = device.deviceName;
+    
+    // Populate device lattitude & longitude
+    var deviceInfoDiv = document.getElementById("device-info");
+    
+    deviceInfoDiv.innerHTML += `
+        <div id="deviceLatitude">Latitude: ${device.latitude} </div>
+        <div id="deviceLongitude">Longitude: ${device.longitude}</div>
+    `;
+    
+    
 }
 
 function populateList(numOfEntries) {
