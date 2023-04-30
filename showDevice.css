@@ -124,11 +124,11 @@ a {
     position: absolute; 
     width: 30vw;
     height: 5vh;
-    top: 50%;
+    top: 70%;
     right: 40px;
     display: flex;
     align-items: center;
-    
+    justify-content: center;
 }
 
 #activityLogHeader {
