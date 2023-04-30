@@ -86,6 +86,10 @@ a {
     flex-direction: row;
 }
 
+#deviceName {
+    font-weight: bold;
+}
+
 #addDevicePopup {
     background-color: #EAEAEA;
     border: 2px solid black;
