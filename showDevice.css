@@ -77,7 +77,7 @@ a {
     width: 80%;
     display: flex;
     padding-left: 2%;
-    padding-top: 2%;
+    padding-top: 2vh;
     flex-direction: column;
 }
 
