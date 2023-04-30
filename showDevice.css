@@ -98,6 +98,7 @@ a {
     width: 100%;
     padding-left: 2%;
     padding-top: 1vh;
+    min-height: 400px;
 }
 
 #activityLogHeader {
