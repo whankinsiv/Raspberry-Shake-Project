@@ -22,14 +22,14 @@ function loadDeviceInfo() {
     var searchParams = new URLSearchParams(queryString);
 
     // Get the value of the "deviceId" parameter
-    var deviceID = parseInt(searchParams.get("deviceId"));
+    var deviceID = searchParams.get("deviceId");
     
     console.log(deviceID);
     console.log(devices);
     
     // Set device
     var device = devices.find(function(d) {
-        return d.deviceId === deviceID;
+        return d.[0] === deviceID;
     });
     console.log(device);
     
