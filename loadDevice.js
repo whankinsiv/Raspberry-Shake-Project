@@ -79,6 +79,21 @@ function showDevice(deviceId) {
     window.location.href = link
 }
 
+function removeDevice(deviceId) {
+    // get device based on URL
+    var queryString = window.location.search;
+
+    // Parse the query string into a URLSearchParams object
+    var searchParams = new URLSearchParams(queryString);
+
+    // Get the value of the "deviceId" parameter
+    var deviceId = searchParams.get("deviceId");
+    
+    var script = "/removeDevice.php?deviceId=" + deviceId;
+    var response = await fetch(script);
+    returnHome();
+}
+
 function returnHome() {
     var link = "https://databasemls.online";
     window.location.href = link;
