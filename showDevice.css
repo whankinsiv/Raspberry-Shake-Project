@@ -113,6 +113,12 @@ a {
     right: 40px;
 }
 
+@media only screen and (max-width: 700px) {
+  #deviceInfoMap {
+    display: none;
+  }
+}
+
 #activityLogHeader {
     height: 6vh;
     border-top: 2px solid black;
