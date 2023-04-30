@@ -24,14 +24,11 @@ function loadDeviceInfo() {
     // Get the value of the "deviceId" parameter
     var deviceID = searchParams.get("deviceId");
     
-    console.log(deviceID);
-    console.log(devices);
-    
     // Set device
     var device = devices.find(function(d) {
         return d[0] === deviceID;
     });
-    console.log(device);
+    console.log(device.altitude);
     
     // Populate device name
     var deviceNameDiv = document.getElementById("deviceName");
