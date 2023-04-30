@@ -99,7 +99,7 @@ a {
     width: 100%;
     padding-left: 2%;
     padding-top: 1vh;
-    min-height: 400px;
+    min-height: 250px;
     display: flex;
     flex-direction: column;
     position: relative;
