@@ -22,11 +22,11 @@ function loadDeviceInfo() {
     var searchParams = new URLSearchParams(queryString);
 
     // Get the value of the "deviceId" parameter
-    var deviceId = searchParams.get("deviceId");
+    var deviceID = searchParams.get("deviceId");
     
     // Populate device name
     var deviceNameDiv = document.getElementById("deviceName");
-    deviceNameDiv.innerHTML = devices[deviceId]["deviceName"];
+    deviceNameDiv.innerHTML = devices[deviceID]["deviceName"];
 }
 
 function populateList(numOfEntries) {
