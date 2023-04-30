@@ -29,7 +29,7 @@ function loadDeviceInfo() {
     
     // Set device
     var device = devices.find(function(d) {
-        return d.[0] === deviceID;
+        return d[0] === deviceID;
     });
     console.log(device);
     
