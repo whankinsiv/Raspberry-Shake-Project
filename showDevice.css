@@ -120,7 +120,7 @@ a {
 #rightSideContents{
     position: absolute; 
     width: 30vw;
-    height: 33vh;
+    height: 34vh;
     top: 0;
     right: 40px;
     display: flex;
@@ -130,7 +130,9 @@ a {
 
 #removeDeviceDiv {
     height:3vh;
+    display: flex;
     align-items: center;
+    padding-top: 1vh;
 }
 
 #activityLogHeader {
