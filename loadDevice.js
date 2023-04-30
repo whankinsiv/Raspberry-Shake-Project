@@ -25,6 +25,7 @@ function loadDeviceInfo() {
     var deviceID = parseInt(searchParams.get("deviceId"));
     
     console.log(deviceID);
+    console.log(devices);
     
     // Set device
     var device = devices.find(function(d) {
