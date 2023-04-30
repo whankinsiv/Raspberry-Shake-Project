@@ -14,7 +14,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$query = "DELETE FROM devices WHERE deviceId = '$deviceId'";
+$query = "DELETE FROM Devices WHERE deviceId = '$deviceId'";
 if ($conn->query($query) === TRUE) {
   echo "Device deleted successfully";
 } else {
