@@ -120,6 +120,17 @@ a {
   }
 }
 
+#removeDeviceDiv {
+    position: absolute; 
+    width: 30vw;
+    height: 5vh;
+    top: 50%;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+
 #activityLogHeader {
     height: 6vh;
     border-top: 2px solid black;
@@ -128,6 +139,7 @@ a {
     align-items: center;
     padding-left: 2%;
 }
+
 #activity-counter {
     width: 100%;
 }
