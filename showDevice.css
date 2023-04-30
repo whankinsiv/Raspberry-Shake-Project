@@ -94,6 +94,12 @@ a {
     align-items: center;
 }
 
+#device-info {
+    width: 100%;
+    padding-left: 2%;
+    padding-top: 1vh;
+}
+
 #activity-counter {
     border-top: 2px solid black;
     margin: 0;
