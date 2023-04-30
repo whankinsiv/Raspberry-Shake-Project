@@ -9,7 +9,14 @@ function loadDevice() {
 
             // Populate device dashboard with devices
             populateList(devices.length);
+            loadDeviceInfo();
         });
+}
+
+function loadDeviceInfo() {
+    // Populate device name
+    var deviceNameDiv = document.getElementById("deviceName");
+    deviceNameDiv.innerHTML = devices[deviceId]["deviceName");
 }
 
 function populateList(numOfEntries) {
