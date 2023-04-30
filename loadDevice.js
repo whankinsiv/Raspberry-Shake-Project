@@ -93,7 +93,6 @@ async function removeDevice(deviceId) {
     var script = "/removeDevice.php?deviceId=" + deviceId;
     var response = await fetch(script);
     console.log(response);
-    returnHome();
 }
 
 function returnHome() {
