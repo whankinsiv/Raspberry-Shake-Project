@@ -120,15 +120,19 @@ a {
   }
 }
 
-#removeDeviceDiv {
+#rightSideContents{
     position: absolute; 
     width: 30vw;
     height: 5vh;
     top: 70%;
     right: 40px;
     display: flex;
-    align-items: center;
+    flex-direction: column:;
     justify-content: center;
+}
+
+#removeDeviceDiv {
+    align-items: center;
 }
 
 #activityLogHeader {
