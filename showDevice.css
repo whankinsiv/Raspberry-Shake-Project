@@ -100,9 +100,11 @@ a {
     padding-top: 1vh;
 }
 
-#activity-counter {
+#activityLogHeader {
     border-top: 2px solid black;
-    margin: 0;
+    border-bottom: 2px solid black;
+}
+#activity-counter {
     width: 100%;
 }
 
