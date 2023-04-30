@@ -50,10 +50,9 @@ function createMap(latitude, longitude, mapDiv) {
     });
 
     var center = [longitude, latitude];
+    var marker = new tt.Marker().setLngLat(center).addTo(map);
     map.setCenter(center);
     map.setZoom(14);
-
-    var marker = new tt.Marker().setLngLat(center).addTo(map);
 }
 
 
