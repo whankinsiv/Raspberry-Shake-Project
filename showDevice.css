@@ -106,11 +106,8 @@ a {
 }
 
 #deviceInfoMap {
-    position: absolute; 
     width: 30vw;
     height: 30vh;
-    top: 0;
-    right: 40px;
     border-radius: 5px;
 }
 
@@ -123,7 +120,7 @@ a {
 #rightSideContents{
     position: absolute; 
     width: 30vw;
-    height: 5vh;
+    height: 33vh;
     top: 70%;
     right: 40px;
     display: flex;
@@ -132,6 +129,7 @@ a {
 }
 
 #removeDeviceDiv {
+    height:3vh;
     align-items: center;
 }
 
