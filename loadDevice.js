@@ -43,6 +43,7 @@ function loadDeviceInfo() {
     deviceInfoDiv.innerHTML += `
         <div id="deviceLatitude">Latitude: ${device.latitude} </div>
         <div id="deviceLongitude">Longitude: ${device.longitude}</div>
+        <div id="deviceAltitude">Altitude: ${device.altitude}</div>
     `;
     
     
