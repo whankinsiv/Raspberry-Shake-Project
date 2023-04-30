@@ -39,7 +39,7 @@ function loadDeviceInfo() {
     deviceInfoDiv.innerHTML += `
         <div id="deviceLatitude">Latitude: ${device.latitude} </div>
         <div id="deviceLongitude">Longitude: ${device.longitude}</div>
-        <div id="deviceAltitude">Altitude: $(device.altitude}</div>
+        <div id="deviceAltitude">Altitude: ${device.altitude}</div>
     `;
     
     // Display map
@@ -51,7 +51,7 @@ function loadDeviceInfo() {
 
     });
 
-    var center = [device.latitude, device.longitude];
+    var center = [device.longitude, device.latitude];
     map.setCenter(center);
     map.setZoom(14);
 
