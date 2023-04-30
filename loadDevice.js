@@ -79,7 +79,7 @@ function showDevice(deviceId) {
     window.location.href = link
 }
 
-function removeDevice(deviceId) {
+async function removeDevice(deviceId) {
     // get device based on URL
     var queryString = window.location.search;
 
