@@ -28,8 +28,6 @@ function loadDeviceInfo() {
     var device = devices.find(function(d) {
         return d[0] === deviceID;
     });
-    console.log(device);
-    console.log(device.altitude);
     
     // Populate device name
     var deviceNameDiv = document.getElementById("deviceName");
@@ -41,9 +39,8 @@ function loadDeviceInfo() {
     deviceInfoDiv.innerHTML += `
         <div id="deviceLatitude">Latitude: ${device.latitude} </div>
         <div id="deviceLongitude">Longitude: ${device.longitude}</div>
-        <div id="deviceAltitude">Altitude: ` +  device.altitude + `</div>
+        <div id="deviceAltitude">Altitude: $(device.altitude}</div>
     `;
-    
     
 }
 
