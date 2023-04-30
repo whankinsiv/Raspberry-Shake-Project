@@ -14,7 +14,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . mysqli_connect_error());
 }
 // Get the current listing id's and asking prices
-$query = "SELECT deviceName, latitude, longitude, altitude FROM Devices WHERE deviceId = '$deviceId';";
+$query = "SELECT eventData, eventDuration, eventTimestamp FROM Events WHERE deviceId = '$deviceId';";
 $result = $conn->query($query);
 
 // Process the result
