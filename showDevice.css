@@ -94,6 +94,12 @@ a {
     align-items: center;
 }
 
+#activity-counter {
+    border-top: 2px solid black;
+    margin: 0;
+    width: 100%;
+}
+
 #addDevicePopup {
     background-color: #EAEAEA;
     border: 2px solid black;
