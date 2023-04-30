@@ -121,7 +121,7 @@ a {
     position: absolute; 
     width: 30vw;
     height: 33vh;
-    top: 70%;
+    top: 0;
     right: 40px;
     display: flex;
     flex-direction: column;
