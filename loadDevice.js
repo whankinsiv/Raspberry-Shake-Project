@@ -28,6 +28,7 @@ function loadDeviceInfo() {
     var device = devices.find(function(d) {
         return d.deviceId === deviceID;
     });
+    console.log(device);
     
     // Populate device name
     var deviceNameDiv = document.getElementById("deviceName");
